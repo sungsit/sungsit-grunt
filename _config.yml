@@ -9,7 +9,6 @@ description: Jai Guru Deva Om ...
 
 author:
   name: Sungsit Sawaiwan
-  email: sungsit.sawaiwan@gmail.com
   github: sungsit
   twitter: gzix
 
@@ -45,5 +44,18 @@ markdown: redcarpet
 # Use Pygments to highlight code blocks
 pygments: true
 
-# UTC+7 Timezone
+# Customized options
+lang: th
 timezone: Asia/Bangkok
+ga:  UA-39671868-1
+
+# Layouts
+layouts: ./_layouts
+
+# Plugins
+plugins: ./_plugins
+
+# Default layout plugin
+__default_layouts:
+  default: default
+  _posts: default

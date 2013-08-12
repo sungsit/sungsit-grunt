@@ -7,7 +7,7 @@ var mountFolder = function (connect, dir) {
 };
 var yeomanConfig = {
   app: 'app',
-  dist: 'dist'
+  dist: 'sungsit.com'
 };
 
 // Directory reference:

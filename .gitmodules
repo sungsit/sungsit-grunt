@@ -1,0 +1,3 @@
+[submodule "sungsit.com"]
+	path = sungsit.com
+	url = git@github.com:sungsit/sungsit.com.git
