@@ -1,9 +1,19 @@
 ---
 layout: default
-title: Jai Guru Deva Om ...
+title: ชัย คุรุ เทวา โอม ...
 ---
 
 <section class="home posts">
+
+  <blockquote>
+  <p>
+    ครึ่งหนึ่งของสิ่งที่ฉันพูดนั้นไร้ความหมาย<br>
+    ฉันเพียงพูดเผื่อเธอจะได้ยินอีกครึ่งหนึ่ง<br><br>
+    คาลิล ยิบราน
+  </p>
+  </blockquote>
+  <hr>
+
   {% for post in site.posts %}
     <article><time>{{post.date | date: '%Y-%m-%d'}}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
   {% endfor %}

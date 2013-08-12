@@ -1,6 +1,7 @@
 $cl: #333
 $bg: #fff
-$textSize: 16px
+$linkCl: #000
+$textSize: 18px
 $lineHeight: 24px
 $fontFamily: "Boon-0.4"
 
@@ -21,6 +22,14 @@ $fontFamily: "Boon-0.4"
   font-weight: $weight
   font-style: $style
 
+html
+  color: $cl
+  background: $bg url(../img/om-trans-5.png) top center no-repeat
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
 body
   max-width: 480px
   margin: 0 auto
@@ -31,24 +40,29 @@ body
   font-weight: 400
   font-style: normal
   text-rendering: optimizeLegibility
+  
+  a
+    color: $linkCl
+    text-decoration: none
+    &:hover, &:visited
+      color: lighten($linkCl, 50%)
+
+  a.home
+    color: #000
 
   .browsehappy
     padding: 10px 20px
     background: yellow
 
-  #title
-    font-size: 60px
+  h1,h2,h3
     line-height: 1.25em
-    padding: 0
-    margin: 0 0 20px 0
-    text-align: center
-  
-  h2,h3
-    line-height: 1.25em
+
+  blockquote
+    font-style: italic
 
   .meta
     font-size: 0.75em
-    color: #999
+    color: lighten($linkCl, 50%)
 
   .footer
     font-size: 0.75em

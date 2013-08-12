@@ -4,7 +4,7 @@
 # it doesn't work, check if it is set in the Gruntfile. There is also a
 # _config.build.yml to set custom overrides for `grunt build`.
 
-name: sungsit
+name: Sungsit
 description: Jai Guru Deva Om ...
 
 author:
