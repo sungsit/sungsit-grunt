@@ -7,7 +7,7 @@ var mountFolder = function (connect, dir) {
 };
 var yeomanConfig = {
   app: 'app',
-  dist: 'sungsit.com'
+  dist: 'sungsit.github.io'
 };
 
 // Directory reference:
@@ -34,7 +34,7 @@ module.exports = function (grunt) {
       },
       jekyll: {
         files: ['<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
-                '_config.yml',
+                '<%= yeoman.app %>/_config.yml',
                 '!<%= yeoman.app %>/_bower_components'],
         tasks: ['jekyll:server']
       },
@@ -169,13 +169,13 @@ module.exports = function (grunt) {
       dist: {
         options: {
           dest: '<%= yeoman.dist %>',
-          config: '_config.yml,_config.build.yml'
+          config: '<%= yeoman.app %>/_config.yml,<%= yeoman.app %>/_config.build.yml'
         }
       },
       server: {
         options: {
           dest: '.jekyll',
-          config: '_config.yml'
+          config: '<%= yeoman.app %>/_config.yml'
         }
       }
     },

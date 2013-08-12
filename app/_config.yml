@@ -49,13 +49,7 @@ lang: th
 timezone: Asia/Bangkok
 ga:  UA-39671868-1
 
-# Layouts
-layouts: ./_layouts
-
-# Plugins
-plugins: ./_plugins
-
 # Default layout plugin
 __default_layouts:
   default: default
-  _posts: default
+  _posts: post

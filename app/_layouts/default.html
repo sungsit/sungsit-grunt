@@ -15,6 +15,7 @@
     <!-- build:css({app,.tmp}) /css/main.css -->
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/h5bp.css">
     <link rel="stylesheet" href="/css/main.css">
     <!-- endbuild -->
 
@@ -30,8 +31,22 @@
     <![endif]-->
 
     <h1>{{ page.title }}</h1>
-
+    <hr>
     {{ content }}
+    <hr>
+    <p><strong><a href="/" title="Go to Hompage.">Home</a></strong></p>
+    <hr>
+            <div class="footer">
+              <div class="info">
+                <p>
+                  Bug me : <a href="http://github.com/sungsit">github.com/sungsit</a><br />
+                  Tug me : <a href="http://twitter.com/gzix">@gzix</a><br />
+                  Typeface in use: <a href="http://github.com/sungsit/boon">boon</a><br />
+                </p>
+              </div>
+              <p>&copy; 2013 Sungsit Sawaiwan. Some Rights Reserved. <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />
+              Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>. </p> 
+            </div>
 
     {% include scripts.html %}
     {% include googleanalytics.html %}
