@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Sungsit Sawaiwan -- Site Maker --  http://twitter.com/gzix
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    Jekyll static site generator
+    Sass 
+    HTML5 ★ Boilerplate 
+    Normalize.css 
+    jQuery, Modernizr 
+
