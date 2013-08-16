@@ -62,9 +62,14 @@ body
   blockquote
     font-style: italic
 
-  .meta
+  .meta, .post-nav
     font-size: 0.75em
     color: lighten($linkCl, 50%)
+    a
+      color: $linkCl
+      text-decoration: none
+      &:hover, &:visited
+        color: lighten($linkCl, 50%)
 
   .footer
     font-size: 0.75em

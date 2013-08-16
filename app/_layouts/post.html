@@ -3,9 +3,34 @@ layout: default
 ---
 
 <article class="post">
-{{ content }}
-<p class="meta">{{ page.date | date: "%a %d %b %Y %X %Z" }}</p>
+
+  {{ content }}
+
+  <footer class="meta">
+
+    Written: <time>{{ page.date | date: "%a %d %b %Y %X %Z" }}</time> <br>
+
+    {% if page.pubdate %}
+     Published: <time>{{ page.pubdate | date: "%a %d %b %Y %X %Z" }}</time>
+     {% else %}
+     Published: <time>{{ page.date | date: "%a %d %b %Y %X %Z" }}</time>
+    {% endif %}
+  </footer>
+
 </article>
+
+<hr>
+
+      <ul class="post-nav">
+        {% if page.previous %}
+          <li>Prev: <a rel="prev" href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+        {% endif %}
+
+        {% if page.next %}
+          <li>Next: <a rel="next" href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+        {% endif %}
+	    </ul>
+
 <hr>
 
     <div id="disqus_thread"></div>
@@ -22,4 +47,4 @@ layout: default
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
+
