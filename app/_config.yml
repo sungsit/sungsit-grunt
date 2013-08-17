@@ -55,7 +55,8 @@ __default_layouts:
   _posts: post
 
 # Disable Disqus comments on localhost
-comments: false
+comments: true
+dq: sungsitdev
 
 # Disable GA on localhost
 ga:

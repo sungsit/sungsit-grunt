@@ -12,6 +12,7 @@ show_drafts: false
 
 # Include Disqus comments when build
 comments: true
+dq: sungsit
 
 ga:
   status: true
