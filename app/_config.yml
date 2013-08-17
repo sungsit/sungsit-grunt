@@ -48,9 +48,15 @@ pygments: true
 # Customized options
 lang: th
 timezone: Asia/Bangkok
-ga:  UA-39671868-1
 
 # Default layout plugin
 __default_layouts:
   default: default
   _posts: post
+
+# Disable Disqus comments on localhost
+comments: false
+
+# Disable GA on localhost
+ga:
+  status: false
