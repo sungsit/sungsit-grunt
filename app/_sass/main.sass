@@ -2,8 +2,8 @@ $cl: #333
 $bg: #fff
 $linkCl: #000
 $textSize: 18px
-$lineHeight: 24px
-$fontFamily: "Boon-0.4"
+$lineHeight: $textSize * 1.5
+$fontFamily: "Boon-0.5"
 
 =font-face($fontName, $style, $weight)
   @font-face
@@ -13,10 +13,10 @@ $fontFamily: "Boon-0.4"
       style: $style
       weight: $weight
 
-+font-face(Boon-Book, normal, 400)
-+font-face(Boon-Book-Italic, italic, 400)
-+font-face(Boon-Bold, normal, 700)
-+font-face(Boon-Bold-Italic, italic, 700)
++font-face(boon-400, normal, 400)
++font-face(boon-400-oblique, italic, 400)
++font-face(boon-700, normal, 700)
++font-face(boon-700-oblique, italic, 700)
 
 =font-case($weight, $style)
   font-weight: $weight
@@ -43,7 +43,7 @@ body
   
   a
     color: $linkCl
-    text-decoration: none
+    text-decoration: underline
     &:hover, &:visited
       color: lighten($linkCl, 50%)
 
