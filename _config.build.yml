@@ -1,0 +1,16 @@
+# Jekyll configuration precedence:
+# 1. Gruntfile task
+# 2. config.build.yml
+# 3. config.yml
+
+future: false
+show_drafts: false
+
+# include Disqus when build
+comments: true
+dq: sungsitdev
+
+# include GA when build
+ga:
+    status: true
+    id: UA-39671868-1

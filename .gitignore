@@ -37,6 +37,3 @@ app/_bower_components
 dist
 node_modules
 .tmp
-
-# Ignore _h5bp-docs
-app/_h5bp-docs
